@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -66,6 +67,8 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$supportVersion"
 
     implementation "android.arch.lifecycle:extensions:$lifecycleExtensionsVersion"
+
+    implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
     testImplementation 'junit:junit:4.+'
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
